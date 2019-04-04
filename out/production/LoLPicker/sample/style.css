@@ -1,11 +1,26 @@
 #toggletop, #toggleadc, #togglemid, #togglesupp, #togglejungle {
     -fx-background-color:  #1E032B;
+    -fx-background-radius: 0;
+
 }
 #toggletop:selected, #togglejungle:selected, #togglemid:selected, #togglesupp:selected, #toggleadc:selected {
-    -fx-background-color: #cc3399;
+    -fx-background-color: #004d4d;
 }
 
 #toggletop:hover, #toggleadc:hover, #togglemid:hover, #togglejungle:hover, #togglesupp:hover {
-    -fx-background-color: #290a1d;
+    -fx-background-color: #000000;
+}
+
+#button {
+    -fx-background-color:   #927656;
+    -fx-background-radius: 50;
+}
+
+#button:hover {
+    -fx-background-color: black;
+}
+
+#label {
+    -fx-background-radius: 30;
 }
 

@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -24,51 +26,90 @@
          <children>
             <AnchorPane prefHeight="600.0" prefWidth="231.0" style="-fx-background-color: #1E032B;">
                <children>
-                  <Pane layoutY="107.0" prefHeight="85.0" prefWidth="231.0" style="-fx-background-color: #FF1066;">
+                  <Pane layoutY="107.0" prefHeight="85.0" prefWidth="231.0" style="-fx-background-color: #917B55#927C56;">
                      <children>
-                        <Label ellipsisString="" layoutX="26.0" layoutY="25.0" prefHeight="36.0" prefWidth="180.0" text="Choose your Lane" textAlignment="CENTER" textFill="WHITE">
+                        <Label contentDisplay="CENTER" ellipsisString="" layoutX="14.0" layoutY="1.0" prefHeight="85.0" prefWidth="212.0" style="-fx-background-color: #927C56;" stylesheets="@style.css" text="Choose your Lane" textAlignment="CENTER" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="19.0" />
+                              <Font name="System Bold" size="23.0" />
                            </font>
                         </Label>
                      </children>
                   </Pane>
                   <VBox layoutY="191.0" prefHeight="409.0" prefWidth="231.0">
                      <children>
-                        <ToggleButton id="toggletop" fx:id="toggletop" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="Top" textFill="WHITE">
+                        <ToggleButton id="toggletop" fx:id="toggletop" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="Top" textFill="WHITE">
                            <toggleGroup>
                               <ToggleGroup fx:id="group" />
                            </toggleGroup>
                            <font>
                               <Font name="System Bold Italic" size="30.0" />
                            </font>
+                           <graphic>
+                              <ImageView fitHeight="43.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/Top_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </ToggleButton>
-                        <ToggleButton fx:id="togglejungle" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="Jungle" textFill="WHITE" toggleGroup="$group">
+                        <ToggleButton fx:id="togglejungle" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="Jungle" textFill="WHITE" toggleGroup="$group">
                            <font>
                               <Font name="System Bold Italic" size="30.0" />
                            </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/Jungle_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </ToggleButton>
-                        <ToggleButton id="togglemid" fx:id="togglemid" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="Mid" textFill="WHITE" toggleGroup="$group">
+                        <ToggleButton id="togglemid" fx:id="togglemid" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="Mid" textFill="WHITE" toggleGroup="$group">
                            <font>
-                              <Font size="30.0" />
+                              <Font name="System Bold Italic" size="30.0" />
                            </font>
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/Middle_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </ToggleButton>
-                        <ToggleButton id="toggleadc" fx:id="toggleadc" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="ADC" textFill="WHITE" toggleGroup="$group">
+                        <ToggleButton id="toggleadc" fx:id="toggleadc" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="ADC" textFill="WHITE" toggleGroup="$group">
                            <font>
-                              <Font size="30.0" />
+                              <Font name="System Bold Italic" size="30.0" />
                            </font>
+                           <graphic>
+                              <ImageView fitHeight="36.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/Bottom_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </ToggleButton>
-                        <ToggleButton id="togglesupp" fx:id="togglesupp" mnemonicParsing="false" prefHeight="83.0" prefWidth="231.0" stylesheets="@style.css" text="Support" textFill="WHITE" toggleGroup="$group">
+                        <ToggleButton id="togglesupp" fx:id="togglesupp" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="80.0" prefWidth="231.0" stylesheets="@style.css" text="Support" textFill="WHITE" toggleGroup="$group">
                            <font>
-                              <Font size="26.0" />
+                              <Font name="System Bold Italic" size="30.0" />
                            </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/Support_icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
                         </ToggleButton>
                      </children>
                   </VBox>
                </children>
             </AnchorPane>
-            <Button fx:id="button" layoutX="350.0" layoutY="472.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="69.0" prefWidth="221.0" text="Roll your Champ" />
-            <Label fx:id="label" layoutX="290.0" layoutY="173.0" prefHeight="195.0" prefWidth="355.0" style="-fx-background-color: #6c2487;" textAlignment="CENTER" textFill="WHITE">
+            <Button id="button" fx:id="button" layoutX="339.0" layoutY="389.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="69.0" prefWidth="221.0" stylesheets="@style.css" text="Roll your Champ" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="label" layoutX="272.0" layoutY="105.0" prefHeight="195.0" prefWidth="355.0" style="-fx-background-color: #927656;" stylesheets="@style.css" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
