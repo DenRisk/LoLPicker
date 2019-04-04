@@ -12,12 +12,12 @@
 }
 
 #button {
-    -fx-background-color:   #927656;
+    -fx-background-color: #927C56;
     -fx-background-radius: 50;
 }
 
 #closebtn {
-    -fx-background-color:   #927656;
+    -fx-background-color: #927C56;
 }
 
 #button:hover, #closebtn:hover{
