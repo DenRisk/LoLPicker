@@ -102,6 +102,11 @@
                         </ToggleButton>
                      </children>
                   </VBox>
+                  <Button fx:id="closebtn" layoutX="14.0" layoutY="37.0" mnemonicParsing="false" onAction="#closeProgramm" prefHeight="38.0" prefWidth="79.0" stylesheets="@style.css" text="Close" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
             <Button id="button" fx:id="button" layoutX="339.0" layoutY="389.0" mnemonicParsing="false" onAction="#clickButton" prefHeight="69.0" prefWidth="221.0" stylesheets="@style.css" text="Roll your Champ" textFill="WHITE">

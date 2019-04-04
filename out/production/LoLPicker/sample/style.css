@@ -16,7 +16,11 @@
     -fx-background-radius: 50;
 }
 
-#button:hover {
+#closebtn {
+    -fx-background-color:   #927656;
+}
+
+#button:hover, #closebtn:hover{
     -fx-background-color: black;
 }
 

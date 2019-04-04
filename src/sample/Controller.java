@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -28,6 +29,7 @@ public class Controller implements Initializable {
 
     public Button button;
     public Label label;
+    public Button closebtn;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -49,6 +51,12 @@ public class Controller implements Initializable {
         }else if (togglejungle.isSelected()) {
             label.setText(getJungleString());
         }
+    }
+
+    public void closeProgramm() {
+        Stage stage = (Stage) closebtn.getScene().getWindow();
+        // do what you have to do
+        stage.close();
     }
 
 }
