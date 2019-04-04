@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -23,13 +24,22 @@
                <children>
                   <Pane layoutY="107.0" prefHeight="85.0" prefWidth="231.0" style="-fx-background-color: #FF1066;">
                      <children>
-                        <Label ellipsisString="" layoutX="26.0" layoutY="25.0" prefHeight="36.0" prefWidth="180.0" text="Choose your Lane" textAlignment="CENTER">
+                        <Label ellipsisString="" layoutX="26.0" layoutY="25.0" prefHeight="36.0" prefWidth="180.0" text="Choose your Lane" textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="19.0" />
                            </font>
                         </Label>
                      </children>
                   </Pane>
+                  <VBox layoutY="191.0" prefHeight="409.0" prefWidth="231.0">
+                     <children>
+                        <ToggleButton mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" text="ToggleButton" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" text="ToggleButton" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" text="ToggleButton" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" text="ToggleButton" />
+                        <ToggleButton mnemonicParsing="false" prefHeight="83.0" prefWidth="231.0" text="ToggleButton" />
+                     </children>
+                  </VBox>
                </children>
             </AnchorPane>
          </children>
