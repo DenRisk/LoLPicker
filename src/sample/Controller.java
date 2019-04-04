@@ -1,9 +1,14 @@
 package sample;
 
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.ToggleGroup;
 
-public class Controller {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class Controller implements Initializable {
 
     public ToggleButton toggletop;
     public ToggleButton togglejungle;
@@ -12,6 +17,14 @@ public class Controller {
     public ToggleButton togglesupp;
 
     public ToggleGroup group;
+
+    public Button button;
+
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+
+    }
 
 
 
