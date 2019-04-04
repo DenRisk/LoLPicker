@@ -35,15 +35,34 @@
                   </Pane>
                   <VBox layoutY="191.0" prefHeight="409.0" prefWidth="231.0">
                      <children>
-                        <ToggleButton fx:id="toggletop" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" text="Top">
+                        <ToggleButton id="toggletop" fx:id="toggletop" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="Top" textFill="WHITE">
                            <toggleGroup>
                               <ToggleGroup fx:id="group" />
                            </toggleGroup>
+                           <font>
+                              <Font name="System Bold Italic" size="30.0" />
+                           </font>
                         </ToggleButton>
-                        <ToggleButton fx:id="togglejungle" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" text="Jungle" toggleGroup="$group" />
-                        <ToggleButton fx:id="togglemid" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" text="Mid" toggleGroup="$group" />
-                        <ToggleButton fx:id="toggleadc" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" text="ADC" toggleGroup="$group" />
-                        <ToggleButton fx:id="togglesupp" mnemonicParsing="false" prefHeight="83.0" prefWidth="231.0" text="Suppport" toggleGroup="$group" />
+                        <ToggleButton fx:id="togglejungle" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="Jungle" textFill="WHITE" toggleGroup="$group">
+                           <font>
+                              <Font name="System Bold Italic" size="30.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton id="togglemid" fx:id="togglemid" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="Mid" textFill="WHITE" toggleGroup="$group">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton id="toggleadc" fx:id="toggleadc" mnemonicParsing="false" prefHeight="82.0" prefWidth="236.0" stylesheets="@style.css" text="ADC" textFill="WHITE" toggleGroup="$group">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </ToggleButton>
+                        <ToggleButton id="togglesupp" fx:id="togglesupp" mnemonicParsing="false" prefHeight="83.0" prefWidth="231.0" stylesheets="@style.css" text="Support" textFill="WHITE" toggleGroup="$group">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </ToggleButton>
                      </children>
                   </VBox>
                </children>

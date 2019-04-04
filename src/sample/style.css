@@ -1,0 +1,11 @@
+#toggletop, #toggleadc, #togglemid, #togglesupp, #togglejungle {
+    -fx-background-color:  #1E032B;
+}
+#toggletop:selected, #togglejungle:selected, #togglemid:selected, #togglesupp:selected, #toggleadc:selected {
+    -fx-background-color: #cc3399;
+}
+
+#toggletop:hover, #toggleadc:hover, #togglemid:hover, #togglejungle:hover, #togglesupp:hover {
+    -fx-background-color: #290a1d;
+}
+
