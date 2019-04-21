@@ -36,6 +36,7 @@ public class Controller implements Initializable {
 
         label.setAlignment(Pos.CENTER);
 
+
     }
 
     public void clickButton() {

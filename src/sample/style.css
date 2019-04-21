@@ -1,5 +1,5 @@
 #toggletop, #toggleadc, #togglemid, #togglesupp, #togglejungle {
-    -fx-background-color:  #1E032B;
+    -fx-background-color:   #010A13;
     -fx-background-radius: 0;
 
 }
@@ -26,5 +26,6 @@
 
 #label {
     -fx-background-radius: 30;
+    -fx-background-color: linear-gradient(from 0% 100% to 100% 100%, #010A13 , #010A13);;
 }
 
